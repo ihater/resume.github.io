@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]李泽鑫-Java开发工程师/广州</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/avatar.jpg" onload="loading()">
+                </section>
+
+                <h1 class="name">李泽鑫</h1>
+                <h4 class="info-job">Java开发工程师 / 广州</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>李泽鑫 / 男 / 23岁</span>
+                    </li>
+                    <li>
+                        <label>毕业学校</label>
+                        <span>广州大学松田学院</span>
+                    </li>
+                    <li>
+                        <label>专业</label>
+                        <span>网络工程、软件工程</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15168285219" target="_blank">17724272754</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:1043182147@qq.com" target="_blank">1043182147@qq.com</a>
+                    </li>
+                <!--    <li>
+                        <label>地址</label>
+                        <a href="http://0b11111110.com/" target="_blank">0b11111110.com/</a>
+                    </li>-->
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/ihater" target="_blank">https://github.com/ihater</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-paint-brush" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>Java基础</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>计算机网络</label>
+                        <progress value="75" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>MySQL</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>前端</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>数据结构</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>服务器</label>
+                        <progress value="65" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技术栈 -->
+            <div class="stack info-unit">
+                <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>前端</label>
+                        <span>jQuery、easyUI、HTML、CSS、Echart，AdminLTE</span>
+                    </li>
+                    <li>
+                        <label>后端</label>
+                        <span>Spring、SpringCloud、MVC、Mybatis、JPA、Hibernate、WebSocket</span>
+                    </li>
+                    <li>
+                        <label>服务器</label>
+                        <span>Ubuntu、Centos、Docker、Hadoop HDFS</span>
+                    </li>
+                    <li>
+                        <label>服务或中间件</label>
+                        <span>RabbitMQ、Solr、Redis、Nginx、SpringCloud核心组件</span>
+                    </li>
+                    <li>
+                        <label>其他</label>
+                        <span>Git、SVN、Junit、Maven</span>
+                    </li>
+                    <li>
+                        <label>计算机网络</label>
+                        <span>路由器、交换机、组网、网络安全</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="assets/images/wechat.jpg" style="width: 100%;" alt="">
+            </section>
+
+
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>广州大学松田学院 - 网络工程、软件工程（全日制本科）</span>
+                            <time>2015.9-2019.7</time>
+                        </h3>
+                        <p>专业排名
+                            <mark>8/54</mark>，期间连任两届网络技术协会会长，安排第二课堂。曾获广东省计算机作品赛第三名
+                            <a href="https://github.com/ihater/-" target="_blank">
+                                <i class="fa fa-link" aria-hidden="true"></i>项目地址</a>。
+                            </span>参加过红帽杯、湖湘杯。获得16年优秀学生干部，优秀毕业生</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]XXXXX研发有限公司-Java开发工程师</span>
+                            <time>2018.6 - 2018.8</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>深度参与该公司电商系统项，负责对用户中心，库存和权限模块的优化和开发工作，独立承担并完成库存模块、权限细粒度、消息推送等功能点的开发。</li>
+                            <li>主要维护并修复<mark>并发</mark>下超卖、消息队里的超时和死信队列、权限实时更新等功能点bug若干。项目采用技术栈
+                                <mark>Spring、SpringMVC、Solr、Hibernate、Redis 持久化、RabbitMQ、分布式锁</mark>，实现前后端完全分离。</li>
+                            <li>1、因为抢购功能要上线，将库存查询等功能从原有项目独立开来，采用 <mark>Redis 分布式锁</mark>解决库存并发查询下库存超卖。 </li>
+                            <li>2、使用 <mark>消息队列</mark>发送邮件、短信完成消息通知，解决有些消息需要客户端上线才能被消费的情况下，有消息积压、消息丢失的BUG，通过消息补偿和死信队列 <mark>保证消息可靠</mark>。</li>
+                            <li>3、用户消费报表使用 Fork/Join、CountDownLatch 实现 <mark>并行任务，主动放弃合并复杂且无价值报表。</mark>。解决每次查询都慢且阻塞的问题</li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历2]广州贝客网络科技有限公司－中级Java工程师开发</span>
+                            <time>2018.8 - 2020.2</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>全程参与主线产品XXX智慧管理系统的开发，迭代。从实习至研发部组长岗位，负责公司系统全流程设计、开发、测试和部署，对需求进行可行性分析和技术选型。
+                                独自负责过：<mark>处方匹配、评估模型、数据管理、风险监控、平台对接、姿态识别、推荐系统</mark>等主要模块的开发、迭代。
+                                <a href="http://www.gaojunpeng.com/jiaoyu/81573.html" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>博客文章</a>。
+                            </li>
+                            <li>技术应用：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B 端：<mark>Spring、SpringMVC、Mybatis、Redis、Mahout、Python 深度学习等</mark>
+                              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C端：<mark>SpringCloud、JPA，ffmpeg、WebSocket、Elasticsearch、RabbitMQ等</mark>
+                            </li>
+                            <li><mark>处方匹配：</mark>根据运动医学博士出具的匹配策略和匹配模型，进行数学建模，推荐出个性化运动处方。
+                                根据收集到的数据埋点，用过Mahout做过简单的协同过滤、Canopy 聚类推等<mark>推荐算法</mark>进行需求的可行性分析。
+                                根据运用场景，有个人课，团队课。根据每个人的偏好和身体机能，推荐出喜欢又合适的运动处方</li>
+                            <li><mark>评估模型：</mark>设计了基于多项式正弦曲线拟合算法的运动心率<mark>评估模型</mark>，每次运动区间，不断收集学员的运动心率，
+                                根据上下靶心率，平静心率，最大心率，身体指数等。计算出某次运动期间的运动质量。给予评分，并制作排名。
+                            </li>
+                            <li>
+                                <mark>数据管理：</mark>按照需求筛选数据，自定义生成各种报表。某大所的运营中期，由于人数较多(实际使用4000+)人，导致体制测试数据量较大，
+                                进行过<mark>MySQL性能优化</mark>，<mark>优化索引</mark>，对心率表，进行数据库分表。批量导出身体机能报表时，用Token解决响应慢客户端的<mark>重复提交</mark>。
+                                用 CyclicBarrier进行<mark>并行运算</mark>，加快数据计算速度。
+                                但偶尔会出现<mark>JVM内存溢出</mark>，采用增大堆空间和用 Semaphore <mark>阻塞队列</mark>控制深度学习环境的计算线程。
+                            </li>
+                            <li>
+                                <mark>风险监控：</mark> 实时预警的，监控学员的心率情况。采用<mark>WebSocket</mark> 实现双向通信，必要时主动调用客户端的谷歌浏览器弹出预警页面提示民警处理。
+                            </li>
+                            <li>
+                                <mark>平台对接：</mark> 对接各种体质设备、有RS232、ANT、蓝牙，FTP，Socket等个对接方式。对接过甲方现有的医馆系统平台。
+                            </li>
+                            <li>姿态识别：基于Ubuntu的深度学习环境，采用Python、C++的开源框架做姿态识别，根据摄像头获取到的实时视频流，通过开源框架得到人体关节坐标，设计动作评分模块。
+                                离职前，此模块只支持单机的人体识别，采用摄像头直连主机无延迟，采用RTMP推流有5秒左右延迟，且该模块未上线。
+                            </li>
+                            <li>推荐系统：用于C端文章推荐，用Mahout实现简单的<mark>离线推荐</mark></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>校内小组项目</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]基于无线智能家居的智能小车管家系统</span>
+                            <span class="link">
+                                <a href="https://github.com/ihater/-" target="_blank">Demo</a>
+                            </span>
+                            <time>2017.3-2017.5</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：Spring+Struts2+Hibernate+Jquery+EasyUI+Python+Django，Raspberry pi3+Arduino+VPN+百度云接口</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现小车的远控控制，数据采集展示
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 2 位同系同学一起
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]完成从
+                                <mark>“设计-硬件制作-软件开发-物联网通信-文档编写”，后台开发和服务器配置</mark>
+                                <li><mark>亮点：</mark>通过基于百度云接口的人脸识别作为系统控制的入口。</li>
+                                <li><mark>亮点：</mark>通过配置云服务器上的VPN，小车连上VPN即可实现远程控制。</li>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]校内特等奖、广东省计算机作品赛第三名</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]基于SNMP协议的网络管理系统</span>
+                           <!-- <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>-->
+                            <time>2018.10-2019.4</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：SpringMVC+Spring+Mybatis+ECharts+MySQL</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]通过此系统，在线远程配置局域网内的路由器、交换机，查看网络设备运行状态
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]个人作品
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]华为路由器交换机的<mark>协议分析</mark>、SNMP协议OID库的校验
+                                <li><mark>亮点：</mark>内网拓扑扫描，主动发现设备</li>
+                                <li><mark>亮点：</mark>配置脚本语法校验，提示出错的地方（非语意分析）</li>
+                                <li><mark>亮点：</mark>通过配置SNMP协议实时查看内网网络设备的运行情况</li>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]优秀毕业设计(5/53)
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望</h2>
+                <hr/>
+                <ul>
+                    <li>
+                    <ul class="info-content">
+                        <li>工作上手快，行动派，是个积极向上的技术狂热爱好者。</li>
+                        <li>全日制本科毕业，具有两年工作经验，责任心较强，有较强的抗压能力，服从安排。</li>
+                        <li>负责过公司管理系统开发，参与和主导过公司产品的全流程设计、开发、测试和部署。</li>
+                        <li>具备有一定的问题排查、分析能力，能够独立解决问题。根据完成需求的设计和开发。</li>
+                    </ul>
+                    </li>
+
+                    <li>
+                        <ul class="info-content">
+                            <li>不断迭代更新自己的技能储备。</li>
+                            <li>不造轮子但至少要清楚原理是什么。</li>
+                            <li>多学数学，概率，离散、统计，不要停留在CURD。</li>
+                            <li>对算法和并发下业务场景的解决方案有浓厚兴趣，希望工作中遇到复杂的业务场景并能优雅的解决</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!--<p>[此处如果有一些能够量化的、且比较个性的指标会有加分，比如喜爱跑步坚持夜跑200小时或者200km等]-->
+                    <!--<span class="mark-txt">“多静多思考，反省不张扬”</span>是我给自己总结的“十字箴言”，鞭策自己做人既不能以己度人，也不以人观己，要脚踏实地做事，坚持自己的梦想和本心。</p>-->
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>© 2020 李泽鑫.文档最后更新时间为
+            <time>2020年03月17日</time>.</p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/ihat/resume" target="_blank">源代码</a>
+            </li>
+        <!--    <li>
+                <a href="http://if2er.com/" target="_blank">Blog</a>
+            </li>-->
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
